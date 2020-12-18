@@ -510,18 +510,13 @@
        font-size: 3.2rem;
        text-align: center;
      }
-
-    
- 
   }
   /* main end */
 
   /* aboutUs ---------------------------------------------- */
   .about_us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6em 4em 4em 4em ;
+    max-height: 100%;
+    max-width: 100%;
   }
   .about_content {
     display: flex;
@@ -531,6 +526,10 @@
 
   .about_text {
       padding: 6em;
+  }
+
+  .about_text li{
+    align-self: center;
   }
 
   .our_designers {
@@ -544,21 +543,24 @@
       padding: 0 4em 0 0;
   }
 
+  * {box-sizing: border-box;}
+
   .box {
     position: relative;
     top: 10%;
     left: 15%;
     transform: translate(-30%, 0%);
     width: 600px;
-    height: 800px;
+    height: 550px;
     transition: 5s;
     overflow-y: scroll;
+    box-sizing: border-box;
   }
 
-  .box img {
-    width: 500px;
-    height: 250px;
+  .box-list li img{
+    border-image-slice: 20% round;
   }
+
  
 
  /* please add from here ---------------------------------------*/
